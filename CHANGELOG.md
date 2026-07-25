@@ -4,6 +4,21 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/zh-CN/1.1.0/),
 
+## [0.1.1] - 2026-07-26
+
+### Fixed
+- utils.is_trading_day 内置 2024-2026 年 A 股节假日表，不再永远返回 False
+- utils.get_trading_days 与 is_trading_day 逻辑统一，正确过滤节假日
+- test_utils.py 伪测试替换为具体日期断言（周末/元旦/春节/国庆）
+- requirements.txt 删除未使用的 numpy 依赖
+- README.md "量比"描述修正为"Vol MA（成交量均线）"
+- README.md 性能数据 10000点 → 1000点（与测试代码一致）
+
+### Added
+- test_money.py 新增 20+ 测试用例覆盖 int/float/TypeError 分支
+- money.py 覆盖率从 74% 提升到 97%
+- 总覆盖率从 85% 提升到 93.80%
+
 ## [0.1.0] - 2026-07-25
 
 ### Added - 初始版本

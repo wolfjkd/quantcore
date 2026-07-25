@@ -8,7 +8,7 @@
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3.10+-blue.svg" alt="Python"/>
   <img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License"/>
-  <img src="https://img.shields.io/badge/Version-0.1.0-orange.svg" alt="Version"/>
+  <img src="https://img.shields.io/badge/Version-0.1.1-orange.svg" alt="Version"/>
 </p>
 
 ---
@@ -22,7 +22,7 @@ QuantCore 是量化交易系统的**共享算法层**，提供纯函数实现的
 
 | 模块 | 文件 | 功能 |
 |------|------|------|
-| **技术指标** | `quantcore/indicators.py` | MA/EMA/SMA/WMA/MACD/KDJ/RSI/BOLL/ATR/量比 |
+| **技术指标** | `quantcore/indicators.py` | MA/EMA/SMA/WMA/MACD/KDJ/RSI/BOLL/ATR/Vol MA（成交量均线） |
 | **绩效指标** | `quantcore/metrics.py` | 夏普/索提诺/卡尔玛/最大回撤/胜率/盈亏比 等 |
 | **资金计算** | `quantcore/money.py` | A股交易费用计算（佣金/印花税/过户费/滑点） |
 | **工具函数** | `quantcore/utils.py` | Z-Score/MinMax标准化/中位数/交易日历 |
@@ -94,10 +94,10 @@ quantcore/
 
 | 指标 | 数据量 | 平均耗时 |
 |------|--------|---------|
-| MA计算 | 10000点 | < 5ms |
-| MACD计算 | 10000点 | < 8ms |
-| KDJ计算 | 10000点 | < 10ms |
-| 夏普比率 | 10000点权益曲线 | < 3ms |
+| MA计算 | 1000点 | < 5ms |
+| MACD计算 | 1000点 | < 8ms |
+| KDJ计算 | 1000点 | < 10ms |
+| 夏普比率 | 1000点权益曲线 | < 3ms |
 
 ## 版本历史
 
@@ -105,6 +105,7 @@ quantcore/
 
 | 版本 | 发布日期 | 主要变更 |
 |------|---------|---------|
+| v0.1.1 | 2026-07-26 | 修复日历 bug + 伪测试 + 文档不一致 + 测试覆盖率提升至 93.80% |
 | v0.1.0 | 2026-07-25 | 初始版本：技术指标 + 绩效指标 + 资金计算 |
 
 ## License

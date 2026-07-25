@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "quantcore"
-version = "0.1.0"
+version = "0.1.1"
 description = "共享算法层 - 技术指标、绩效指标等纯函数库"
 requires-python = ">=3.10"
 authors = [
