@@ -1,4 +1,6 @@
-# QuantCore
+﻿# QuantCore
+
+> **⚠️ 不再维护更新，已并入 TradeX**
 
 <p align="center">
   <strong>共享算法层 · 技术指标 / 绩效指标 / 资金计算 纯函数库</strong><br/>
@@ -16,7 +18,7 @@
 ## 项目定位
 
 QuantCore 是量化交易系统的**共享算法层**，提供纯函数实现的技术指标、绩效指标和资金计算能力。
-被 [QuantEngine](https://github.com/wolfjkd/quantengine) 和 [Trader Finance Hub](https://github.com/wolfjkd/trader-finance-hub) 复用，避免算法重复实现。
+被 [QuantEngine](https://github.com/wolfjkd/quantengine) 和 [Tradex Hub](https://github.com/wolfjkd/tradex-hub) 复用，避免算法重复实现。
 
 ## 核心模块
 
